@@ -1,7 +1,7 @@
 inherit cmake
 
 NAME="x265"
-VERSION=1.9
+VERSION=2.3
 RELEASE=1
 CATEGORY="Libs"
 SUMMARY="H.265 video encoder library"
@@ -11,11 +11,11 @@ HOMEPAGE="http://x265.org/"
 SRC_URI="https://bitbucket.org/multicoreware/x265/downloads/x265_${VERSION}.tar.gz"
 SRC_DIR="x265_${VERSION}"
 
-PKG_NAMES="x265 libx265_79 libx265-devel"
+PKG_NAMES="x265 libx265_110 libx265-devel"
 x265_CATEGORY="Video"
 x265_SUMMARY=${SUMMARY/library/utility}
 x265_CONTENTS="usr/bin/x265.exe usr/share/doc/"
-libx265_79_CONTENTS="usr/bin/cygx265-79.dll"
+libx265_110_CONTENTS="usr/bin/cygx265-110.dll"
 libx265_devel_CONTENTS="usr/include/x265*.h usr/lib/libx265.dll.a usr/lib/pkgconfig/x265.pc"
 PKG_IGNORE="usr/lib/libx265.a"
 
