@@ -1,7 +1,7 @@
 inherit cmake
 
 NAME="x265"
-VERSION=2.3
+VERSION=2.6
 RELEASE=1
 CATEGORY="Libs"
 SUMMARY="H.265 video encoder library"
@@ -9,13 +9,13 @@ DESCRIPTION="x265 is a H.265/HEVC video encoder application library, designed
 to encode an uncompressed image sequence into an H.265/HEVC bitstream."
 HOMEPAGE="http://x265.org/"
 SRC_URI="https://bitbucket.org/multicoreware/x265/downloads/x265_${VERSION}.tar.gz"
-SRC_DIR="x265_${VERSION}"
+SRC_DIR="x265_v${VERSION}"
 
-PKG_NAMES="x265 libx265_110 libx265-devel"
+PKG_NAMES="x265 libx265_146 libx265-devel"
 x265_CATEGORY="Video"
 x265_SUMMARY=${SUMMARY/library/utility}
 x265_CONTENTS="usr/bin/x265.exe usr/share/doc/"
-libx265_110_CONTENTS="usr/bin/cygx265-110.dll"
+libx265_146_CONTENTS="usr/bin/cygx265-146.dll"
 libx265_devel_CONTENTS="usr/include/x265*.h usr/lib/libx265.dll.a usr/lib/pkgconfig/x265.pc"
 PKG_IGNORE="usr/lib/libx265.a"
 
